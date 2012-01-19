@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA747D9F0F9514B9006C5449 /* eSpeak_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* eSpeak_Prefix.pch */; };
+		C95FD760122422CF00219626 /* ESpeakEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = C95FD75E122422CF00219626 /* ESpeakEngine.h */; };
+		C95FD761122422CF00219626 /* ESpeakEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C95FD75F122422CF00219626 /* ESpeakEngine.m */; };
+		C95FD77D122423AF00219626 /* FliteEngineTest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C95FD775122423AF00219626 /* FliteEngineTest-Info.plist */; };
+		C95FD77E122423AF00219626 /* FliteEngineTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C95FD777122423AF00219626 /* FliteEngineTestAppDelegate.m */; };
+		C95FD77F122423AF00219626 /* FliteEngineTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95FD779122423AF00219626 /* FliteEngineTestViewController.m */; };
+		C95FD780122423AF00219626 /* FliteEngineTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95FD77A122423AF00219626 /* FliteEngineTestViewController.xib */; };
+		C95FD781122423AF00219626 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C95FD77B122423AF00219626 /* main.m */; };
+		C95FD782122423AF00219626 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95FD77C122423AF00219626 /* MainWindow.xib */; };
+		C95FD7D0122424A300219626 /* libeSpeak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libeSpeak.a */; };
+		C97856D3122B16BA003BB118 /* espeak-data in Resources */ = {isa = PBXBuildFile; fileRef = C97855FB122B16B9003BB118 /* espeak-data */; };
+		C9957F4C12240872007BC42B /* compiledict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F1F12240872007BC42B /* compiledict.cpp */; };
+		C9957F4D12240872007BC42B /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F2012240872007BC42B /* debug.cpp */; };
+		C9957F4E12240872007BC42B /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F2112240872007BC42B /* debug.h */; };
+		C9957F4F12240872007BC42B /* dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F2212240872007BC42B /* dictionary.cpp */; };
+		C9957F5112240872007BC42B /* espeak_command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F2412240872007BC42B /* espeak_command.cpp */; };
+		C9957F5212240872007BC42B /* espeak_command.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F2512240872007BC42B /* espeak_command.h */; };
+		C9957F5312240872007BC42B /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F2612240872007BC42B /* event.cpp */; };
+		C9957F5412240872007BC42B /* event.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F2712240872007BC42B /* event.h */; };
+		C9957F5512240872007BC42B /* fifo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F2812240872007BC42B /* fifo.cpp */; };
+		C9957F5612240872007BC42B /* fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F2912240872007BC42B /* fifo.h */; };
+		C9957F5712240872007BC42B /* intonation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F2A12240872007BC42B /* intonation.cpp */; };
+		C9957F5812240872007BC42B /* klatt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F2B12240872007BC42B /* klatt.cpp */; };
+		C9957F5912240872007BC42B /* klatt.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F2C12240872007BC42B /* klatt.h */; };
+		C9957F5B12240872007BC42B /* mbrowrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F2E12240872007BC42B /* mbrowrap.cpp */; };
+		C9957F5C12240872007BC42B /* mbrowrap.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F2F12240872007BC42B /* mbrowrap.h */; };
+		C9957F5D12240872007BC42B /* numbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F3012240872007BC42B /* numbers.cpp */; };
+		C9957F5E12240872007BC42B /* phoneme.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F3112240872007BC42B /* phoneme.h */; };
+		C9957F5F12240872007BC42B /* phonemelist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F3212240872007BC42B /* phonemelist.cpp */; };
+		C9957F6012240872007BC42B /* portaudio.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F3312240872007BC42B /* portaudio.h */; };
+		C9957F6112240872007BC42B /* portaudio18.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F3412240872007BC42B /* portaudio18.h */; };
+		C9957F6212240872007BC42B /* portaudio19.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F3512240872007BC42B /* portaudio19.h */; };
+		C9957F6312240872007BC42B /* readclause.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F3612240872007BC42B /* readclause.cpp */; };
+		C9957F6412240872007BC42B /* setlengths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F3712240872007BC42B /* setlengths.cpp */; };
+		C9957F6512240872007BC42B /* sintab.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F3812240872007BC42B /* sintab.h */; };
+		C9957F6712240872007BC42B /* speak_lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F3A12240872007BC42B /* speak_lib.cpp */; };
+		C9957F6812240872007BC42B /* speak_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F3B12240872007BC42B /* speak_lib.h */; };
+		C9957F6912240872007BC42B /* speech.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F3C12240872007BC42B /* speech.h */; };
+		C9957F6B12240872007BC42B /* synth_mbrola.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F3E12240872007BC42B /* synth_mbrola.cpp */; };
+		C9957F6C12240872007BC42B /* synthdata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F3F12240872007BC42B /* synthdata.cpp */; };
+		C9957F6D12240872007BC42B /* synthesize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F4012240872007BC42B /* synthesize.cpp */; };
+		C9957F6E12240872007BC42B /* synthesize.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F4112240872007BC42B /* synthesize.h */; };
+		C9957F6F12240872007BC42B /* tr_languages.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F4212240872007BC42B /* tr_languages.cpp */; };
+		C9957F7012240872007BC42B /* translate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F4312240872007BC42B /* translate.cpp */; };
+		C9957F7112240872007BC42B /* translate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F4412240872007BC42B /* translate.h */; };
+		C9957F7212240872007BC42B /* voice.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F4512240872007BC42B /* voice.h */; };
+		C9957F7312240872007BC42B /* voices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F4612240872007BC42B /* voices.cpp */; };
+		C9957F7412240872007BC42B /* wave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F4712240872007BC42B /* wave.cpp */; };
+		C9957F7512240872007BC42B /* wave.h in Headers */ = {isa = PBXBuildFile; fileRef = C9957F4812240872007BC42B /* wave.h */; };
+		C9957F7612240872007BC42B /* wave_pulse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F4912240872007BC42B /* wave_pulse.cpp */; };
+		C9957F7712240872007BC42B /* wave_sada.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F4A12240872007BC42B /* wave_sada.cpp */; };
+		C9957F7812240872007BC42B /* wavegen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9957F4B12240872007BC42B /* wavegen.cpp */; };
+		F27023D214C787B800D04F1B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27023D114C787B800D04F1B /* AVFoundation.framework */; };
+		F27023D314C787D400D04F1B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27023D114C787B800D04F1B /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C95FD783122423B900219626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = eSpeak;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9E063451229779B0083EBCF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "espeak-data";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA747D9E0F9514B9006C5449 /* eSpeak_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eSpeak_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		C95FD75E122422CF00219626 /* ESpeakEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESpeakEngine.h; path = Classes/ESpeakEngine.h; sourceTree = "<group>"; };
+		C95FD75F122422CF00219626 /* ESpeakEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESpeakEngine.m; path = Classes/ESpeakEngine.m; sourceTree = "<group>"; };
+		C95FD76D1224230300219626 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95FD76F1224230400219626 /* TestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestApp-Info.plist"; sourceTree = "<group>"; };
+		C95FD775122423AF00219626 /* FliteEngineTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FliteEngineTest-Info.plist"; sourceTree = "<group>"; };
+		C95FD776122423AF00219626 /* FliteEngineTestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FliteEngineTestAppDelegate.h; sourceTree = "<group>"; };
+		C95FD777122423AF00219626 /* FliteEngineTestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FliteEngineTestAppDelegate.m; sourceTree = "<group>"; };
+		C95FD778122423AF00219626 /* FliteEngineTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FliteEngineTestViewController.h; sourceTree = "<group>"; };
+		C95FD779122423AF00219626 /* FliteEngineTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FliteEngineTestViewController.m; sourceTree = "<group>"; };
+		C95FD77A122423AF00219626 /* FliteEngineTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FliteEngineTestViewController.xib; sourceTree = "<group>"; };
+		C95FD77B122423AF00219626 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C95FD77C122423AF00219626 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		C97855FB122B16B9003BB118 /* espeak-data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "espeak-data"; path = "Libraries/espeak-data"; sourceTree = "<group>"; };
+		C9957F1F12240872007BC42B /* compiledict.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compiledict.cpp; sourceTree = "<group>"; };
+		C9957F2012240872007BC42B /* debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = debug.cpp; sourceTree = "<group>"; };
+		C9957F2112240872007BC42B /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		C9957F2212240872007BC42B /* dictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dictionary.cpp; sourceTree = "<group>"; };
+		C9957F2412240872007BC42B /* espeak_command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = espeak_command.cpp; sourceTree = "<group>"; };
+		C9957F2512240872007BC42B /* espeak_command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = espeak_command.h; sourceTree = "<group>"; };
+		C9957F2612240872007BC42B /* event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = event.cpp; sourceTree = "<group>"; };
+		C9957F2712240872007BC42B /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = event.h; sourceTree = "<group>"; };
+		C9957F2812240872007BC42B /* fifo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fifo.cpp; sourceTree = "<group>"; };
+		C9957F2912240872007BC42B /* fifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fifo.h; sourceTree = "<group>"; };
+		C9957F2A12240872007BC42B /* intonation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = intonation.cpp; sourceTree = "<group>"; };
+		C9957F2B12240872007BC42B /* klatt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = klatt.cpp; sourceTree = "<group>"; };
+		C9957F2C12240872007BC42B /* klatt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = klatt.h; sourceTree = "<group>"; };
+		C9957F2E12240872007BC42B /* mbrowrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mbrowrap.cpp; sourceTree = "<group>"; };
+		C9957F2F12240872007BC42B /* mbrowrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mbrowrap.h; sourceTree = "<group>"; };
+		C9957F3012240872007BC42B /* numbers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = numbers.cpp; sourceTree = "<group>"; };
+		C9957F3112240872007BC42B /* phoneme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phoneme.h; sourceTree = "<group>"; };
+		C9957F3212240872007BC42B /* phonemelist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phonemelist.cpp; sourceTree = "<group>"; };
+		C9957F3312240872007BC42B /* portaudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portaudio.h; sourceTree = "<group>"; };
+		C9957F3412240872007BC42B /* portaudio18.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portaudio18.h; sourceTree = "<group>"; };
+		C9957F3512240872007BC42B /* portaudio19.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portaudio19.h; sourceTree = "<group>"; };
+		C9957F3612240872007BC42B /* readclause.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = readclause.cpp; sourceTree = "<group>"; };
+		C9957F3712240872007BC42B /* setlengths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = setlengths.cpp; sourceTree = "<group>"; };
+		C9957F3812240872007BC42B /* sintab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sintab.h; sourceTree = "<group>"; };
+		C9957F3A12240872007BC42B /* speak_lib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = speak_lib.cpp; sourceTree = "<group>"; };
+		C9957F3B12240872007BC42B /* speak_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speak_lib.h; sourceTree = "<group>"; };
+		C9957F3C12240872007BC42B /* speech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speech.h; sourceTree = "<group>"; };
+		C9957F3E12240872007BC42B /* synth_mbrola.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = synth_mbrola.cpp; sourceTree = "<group>"; };
+		C9957F3F12240872007BC42B /* synthdata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = synthdata.cpp; sourceTree = "<group>"; };
+		C9957F4012240872007BC42B /* synthesize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = synthesize.cpp; sourceTree = "<group>"; };
+		C9957F4112240872007BC42B /* synthesize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = synthesize.h; sourceTree = "<group>"; };
+		C9957F4212240872007BC42B /* tr_languages.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tr_languages.cpp; sourceTree = "<group>"; };
+		C9957F4312240872007BC42B /* translate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = translate.cpp; sourceTree = "<group>"; };
+		C9957F4412240872007BC42B /* translate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = translate.h; sourceTree = "<group>"; };
+		C9957F4512240872007BC42B /* voice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voice.h; sourceTree = "<group>"; };
+		C9957F4612240872007BC42B /* voices.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = voices.cpp; sourceTree = "<group>"; };
+		C9957F4712240872007BC42B /* wave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wave.cpp; sourceTree = "<group>"; };
+		C9957F4812240872007BC42B /* wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wave.h; sourceTree = "<group>"; };
+		C9957F4912240872007BC42B /* wave_pulse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wave_pulse.cpp; sourceTree = "<group>"; };
+		C9957F4A12240872007BC42B /* wave_sada.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wave_sada.cpp; sourceTree = "<group>"; };
+		C9957F4B12240872007BC42B /* wavegen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wavegen.cpp; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libeSpeak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libeSpeak.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27023D114C787B800D04F1B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C95FD76B1224230300219626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27023D314C787D400D04F1B /* AVFoundation.framework in Frameworks */,
+				C95FD7D0122424A300219626 /* libeSpeak.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27023D214C787B800D04F1B /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libeSpeak.a */,
+				C95FD76D1224230300219626 /* TestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* eSpeak */ = {
+			isa = PBXGroup;
+			children = (
+				C97855FB122B16B9003BB118 /* espeak-data */,
+				C95FD766122422EA00219626 /* Tests */,
+				C9957F1E12240872007BC42B /* Libraries */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				C95FD76F1224230400219626 /* TestApp-Info.plist */,
+			);
+			name = eSpeak;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F27023D114C787B800D04F1B /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C95FD75E122422CF00219626 /* ESpeakEngine.h */,
+				C95FD75F122422CF00219626 /* ESpeakEngine.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* eSpeak_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		C95FD766122422EA00219626 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C95FD775122423AF00219626 /* FliteEngineTest-Info.plist */,
+				C95FD776122423AF00219626 /* FliteEngineTestAppDelegate.h */,
+				C95FD777122423AF00219626 /* FliteEngineTestAppDelegate.m */,
+				C95FD778122423AF00219626 /* FliteEngineTestViewController.h */,
+				C95FD779122423AF00219626 /* FliteEngineTestViewController.m */,
+				C95FD77A122423AF00219626 /* FliteEngineTestViewController.xib */,
+				C95FD77B122423AF00219626 /* main.m */,
+				C95FD77C122423AF00219626 /* MainWindow.xib */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C9957F1E12240872007BC42B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C9957F1F12240872007BC42B /* compiledict.cpp */,
+				C9957F2012240872007BC42B /* debug.cpp */,
+				C9957F2112240872007BC42B /* debug.h */,
+				C9957F2212240872007BC42B /* dictionary.cpp */,
+				C9957F2412240872007BC42B /* espeak_command.cpp */,
+				C9957F2512240872007BC42B /* espeak_command.h */,
+				C9957F2612240872007BC42B /* event.cpp */,
+				C9957F2712240872007BC42B /* event.h */,
+				C9957F2812240872007BC42B /* fifo.cpp */,
+				C9957F2912240872007BC42B /* fifo.h */,
+				C9957F2A12240872007BC42B /* intonation.cpp */,
+				C9957F2B12240872007BC42B /* klatt.cpp */,
+				C9957F2C12240872007BC42B /* klatt.h */,
+				C9957F2E12240872007BC42B /* mbrowrap.cpp */,
+				C9957F2F12240872007BC42B /* mbrowrap.h */,
+				C9957F3012240872007BC42B /* numbers.cpp */,
+				C9957F3112240872007BC42B /* phoneme.h */,
+				C9957F3212240872007BC42B /* phonemelist.cpp */,
+				C9957F3312240872007BC42B /* portaudio.h */,
+				C9957F3412240872007BC42B /* portaudio18.h */,
+				C9957F3512240872007BC42B /* portaudio19.h */,
+				C9957F3612240872007BC42B /* readclause.cpp */,
+				C9957F3712240872007BC42B /* setlengths.cpp */,
+				C9957F3812240872007BC42B /* sintab.h */,
+				C9957F3A12240872007BC42B /* speak_lib.cpp */,
+				C9957F3B12240872007BC42B /* speak_lib.h */,
+				C9957F3C12240872007BC42B /* speech.h */,
+				C9957F3E12240872007BC42B /* synth_mbrola.cpp */,
+				C9957F3F12240872007BC42B /* synthdata.cpp */,
+				C9957F4012240872007BC42B /* synthesize.cpp */,
+				C9957F4112240872007BC42B /* synthesize.h */,
+				C9957F4212240872007BC42B /* tr_languages.cpp */,
+				C9957F4312240872007BC42B /* translate.cpp */,
+				C9957F4412240872007BC42B /* translate.h */,
+				C9957F4512240872007BC42B /* voice.h */,
+				C9957F4612240872007BC42B /* voices.cpp */,
+				C9957F4712240872007BC42B /* wave.cpp */,
+				C9957F4812240872007BC42B /* wave.h */,
+				C9957F4912240872007BC42B /* wave_pulse.cpp */,
+				C9957F4A12240872007BC42B /* wave_sada.cpp */,
+				C9957F4B12240872007BC42B /* wavegen.cpp */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* eSpeak_Prefix.pch in Headers */,
+				C9957F4E12240872007BC42B /* debug.h in Headers */,
+				C9957F5212240872007BC42B /* espeak_command.h in Headers */,
+				C9957F5412240872007BC42B /* event.h in Headers */,
+				C9957F5612240872007BC42B /* fifo.h in Headers */,
+				C9957F5912240872007BC42B /* klatt.h in Headers */,
+				C9957F5C12240872007BC42B /* mbrowrap.h in Headers */,
+				C9957F5E12240872007BC42B /* phoneme.h in Headers */,
+				C9957F6012240872007BC42B /* portaudio.h in Headers */,
+				C9957F6112240872007BC42B /* portaudio18.h in Headers */,
+				C9957F6212240872007BC42B /* portaudio19.h in Headers */,
+				C9957F6512240872007BC42B /* sintab.h in Headers */,
+				C9957F6812240872007BC42B /* speak_lib.h in Headers */,
+				C9957F6912240872007BC42B /* speech.h in Headers */,
+				C9957F6E12240872007BC42B /* synthesize.h in Headers */,
+				C9957F7112240872007BC42B /* translate.h in Headers */,
+				C9957F7212240872007BC42B /* voice.h in Headers */,
+				C9957F7512240872007BC42B /* wave.h in Headers */,
+				C95FD760122422CF00219626 /* ESpeakEngine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C95FD76C1224230300219626 /* TestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C95FD7721224230400219626 /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildPhases = (
+				C95FD7691224230300219626 /* Resources */,
+				C95FD76A1224230300219626 /* Sources */,
+				C95FD76B1224230300219626 /* Frameworks */,
+				C9E063451229779B0083EBCF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C95FD784122423B900219626 /* PBXTargetDependency */,
+			);
+			name = TestApp;
+			productName = TestApp;
+			productReference = C95FD76D1224230300219626 /* TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2AAC07D0554694100DB518D /* eSpeak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "eSpeak" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eSpeak;
+			productName = eSpeak;
+			productReference = D2AAC07E0554694100DB518D /* libeSpeak.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "eSpeak" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* eSpeak */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* eSpeak */,
+				C95FD76C1224230300219626 /* TestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C95FD7691224230300219626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95FD77D122423AF00219626 /* FliteEngineTest-Info.plist in Resources */,
+				C95FD780122423AF00219626 /* FliteEngineTestViewController.xib in Resources */,
+				C95FD782122423AF00219626 /* MainWindow.xib in Resources */,
+				C97856D3122B16BA003BB118 /* espeak-data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C95FD76A1224230300219626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95FD77E122423AF00219626 /* FliteEngineTestAppDelegate.m in Sources */,
+				C95FD77F122423AF00219626 /* FliteEngineTestViewController.m in Sources */,
+				C95FD781122423AF00219626 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9957F4C12240872007BC42B /* compiledict.cpp in Sources */,
+				C9957F4D12240872007BC42B /* debug.cpp in Sources */,
+				C9957F4F12240872007BC42B /* dictionary.cpp in Sources */,
+				C9957F5112240872007BC42B /* espeak_command.cpp in Sources */,
+				C9957F5312240872007BC42B /* event.cpp in Sources */,
+				C9957F5512240872007BC42B /* fifo.cpp in Sources */,
+				C9957F5712240872007BC42B /* intonation.cpp in Sources */,
+				C9957F5812240872007BC42B /* klatt.cpp in Sources */,
+				C9957F5B12240872007BC42B /* mbrowrap.cpp in Sources */,
+				C9957F5D12240872007BC42B /* numbers.cpp in Sources */,
+				C9957F5F12240872007BC42B /* phonemelist.cpp in Sources */,
+				C9957F6312240872007BC42B /* readclause.cpp in Sources */,
+				C9957F6412240872007BC42B /* setlengths.cpp in Sources */,
+				C9957F6712240872007BC42B /* speak_lib.cpp in Sources */,
+				C9957F6B12240872007BC42B /* synth_mbrola.cpp in Sources */,
+				C9957F6C12240872007BC42B /* synthdata.cpp in Sources */,
+				C9957F6D12240872007BC42B /* synthesize.cpp in Sources */,
+				C9957F6F12240872007BC42B /* tr_languages.cpp in Sources */,
+				C9957F7012240872007BC42B /* translate.cpp in Sources */,
+				C9957F7312240872007BC42B /* voices.cpp in Sources */,
+				C9957F7412240872007BC42B /* wave.cpp in Sources */,
+				C9957F7612240872007BC42B /* wave_pulse.cpp in Sources */,
+				C9957F7712240872007BC42B /* wave_sada.cpp in Sources */,
+				C9957F7812240872007BC42B /* wavegen.cpp in Sources */,
+				C95FD761122422CF00219626 /* ESpeakEngine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C95FD784122423B900219626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* eSpeak */;
+			targetProxy = C95FD783122423B900219626 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/eSpeak.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = eSpeak_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = eSpeak;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv6;
+				DSTROOT = /tmp/eSpeak.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = eSpeak_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = eSpeak;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C95FD7701224230400219626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "TestApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LOG_FRAMES = 1;
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TestApp;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		C95FD7711224230400219626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "TestApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LOG_FRAMES = 1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TestApp;
+				SDKROOT = iphoneos4.0;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "eSpeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "eSpeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C95FD7721224230400219626 /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95FD7701224230400219626 /* Debug */,
+				C95FD7711224230400219626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
