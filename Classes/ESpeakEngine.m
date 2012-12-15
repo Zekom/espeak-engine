@@ -112,9 +112,9 @@ static int eSpeakCallback(short *wav, int numsamples,
     voice.variant = 0;
 	
     if (strlen(voice.languages) > 2){
-		char espeakLangStr[6];
-		sprintf(espeakLangStr, "en-us");
-		voice.languages = espeakLangStr;
+		//char espeakLangStr[6];
+		//sprintf(espeakLangStr, "en-us");
+		//voice.languages = espeakLangStr;
     }
 	
     espeak_ERROR err = espeak_SetVoiceByProperties(&voice);

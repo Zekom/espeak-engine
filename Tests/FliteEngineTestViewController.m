@@ -99,6 +99,17 @@
 	// e.g. self.myOutlet = nil;
 }
 
+- (void)textViewDidChange:(UITextView *)textView {
+    
+}
+
+- (BOOL)textView:(UITextView *)tw shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    if ([text isEqualToString:@"\n"]) {
+        [tw resignFirstResponder];
+        return NO;
+    }
+    return YES;
+}
 
 - (void)dealloc {
 	[engine release];

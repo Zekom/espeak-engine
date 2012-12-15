@@ -447,6 +447,7 @@
 				ARCHS = (
 					armv6,
 					armv7,
+					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/eSpeak.dst;
@@ -472,6 +473,7 @@
 				ARCHS = (
 					armv6,
 					armv7,
+					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				DSTROOT = /tmp/eSpeak.dst;
 				GCC_MODEL_TUNING = G5;
